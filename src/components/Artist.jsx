@@ -7,6 +7,8 @@ function Artist () {
 
     <div className="artist">
 
+        <h1>Name: </h1>
+
 
     </div>
     )
