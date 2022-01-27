@@ -8,16 +8,11 @@
 }
 
 body {
-  /* background-image: URL("./assets/bg.png");
+  background-image: URL("./assets/bg.png");
   background-color: #003b69;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-attachment: fixed;
-  background-position: center; */
-
-  /* shorthand: */
-
-  background: #003b69 URL("./assets/bg.png") no-repeat fixed center cover;
 }
 
 .logo {
