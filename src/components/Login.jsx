@@ -34,9 +34,9 @@ function Login( { user, setUser } ) {
 
     return (
         <div className="login">
-    <h1 className="loginHere">Login: </h1>
+    <h1 className="loginHere">Please Login below: </h1>
     <form className="loginForm" onSubmit={handleSubmit}>
-        <label htmlFor="user">User:</label>
+        <label htmlFor="user">Username:</label>
         <input type="text" name="user" value={username} onChange={handleUsername}/>
         <label htmlFor="password">Password:</label>
         <input type="text" name="user" value={password} onChange={handlePassword}/>

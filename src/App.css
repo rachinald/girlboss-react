@@ -73,7 +73,8 @@ h1 {
   text-align: center;
 }
 
-.register {
+.register,
+.login {
   text-align: center;
   font-display: auto;
   justify-content: center;
@@ -82,13 +83,18 @@ h1 {
   padding: 2rem;
 }
 
-.registerForm {
+.registerForm,
+.loginForm {
   display: flex;
   flex-direction: column;
   color: white;
   font-weight: 600;
   height: 10rem;
   padding: 3rem 0;
+}
+
+label {
+  margin: 1rem 0 0 0;
 }
 
 input {
