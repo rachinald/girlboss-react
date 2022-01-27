@@ -1,9 +1,17 @@
+import hebe from "../assets/hebe1.jpeg"
+
 function Home () {
+
+    const handleImage = () => {
+        
+    }
+
+
     return (
 
         <div className="home">
             
-        <h1>hello world</h1>
+        <img src={hebe} alt="hebe" onClick={handleImage}/>
 
     
         </div>

@@ -34,12 +34,12 @@ function App() {
         <nav>
           <ul>
             <li>
-              <Link to="/" class="middle">Home</Link>
+              <Link to="" class="middle">Home</Link>
             </li>
             <li>
               <Link to="/register" class="middle">Register</Link>
             </li>
-            <img src={Logo} className="logo" alt="logo"></img>
+            <img src={Logo} className="logo" alt="logo" />
             <li>
               <Link to="/login" class="middle">Login</Link>
             </li>
@@ -47,19 +47,15 @@ function App() {
               <Link to="/profile" class="middle">Profile</Link>
             </li>
           </ul>
-
-          
           
         </nav>
-        
+  
       <Routes>
-
-          <Route path='/home' element={<Home/>} />
+          <Route path='' element={<Home/>} />
           <Route path='/login' element={<Login user={user} setUser={setUser} /> } />
           <Route path='/register' element={<Register/>} />
           <Route path='/profile' element={<Profile user={user} setUser={setUser}/>} />
           <Route path='/artist' element={<Artist id={id} setId={setId} />} />
-
           
       </Routes>
       
