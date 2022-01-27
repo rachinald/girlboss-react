@@ -75,14 +75,11 @@ h1 {
 
 .register {
   text-align: center;
-  margin: 5rem auto;
   font-display: auto;
   justify-content: center;
   font-weight: 500;
-  width: 30rem;
   align-items: center;
   padding: 2rem;
-  background-color: black;
 }
 
 .registerForm {
@@ -92,15 +89,13 @@ h1 {
   font-weight: 600;
   height: 10rem;
   padding: 3rem 0;
-  width: 30rem;
-  background-color: red;
 }
 
 input {
   align-items: center;
-  width: 30rem;
-  margin: 1rem 0;
   padding: 0.25rem;
+  width: 30rem;
+  margin: 0 auto;
 }
 
 .submit {
@@ -112,7 +107,7 @@ input {
   color: white;
   padding: 0.25rem 1rem;
   text-decoration: none;
-  margin: 4px 0;
+  margin: 1rem auto;
   cursor: pointer;
   width: 7rem;
 }
