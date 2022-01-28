@@ -21,7 +21,7 @@ import {
 function App() {
   const [ user, setUser ] = useState(null);
 
-  const [ id, setId ] = useState(null);
+
 
 
   return (
@@ -55,7 +55,8 @@ function App() {
           <Route path='/login' element={<Login user={user} setUser={setUser} /> } />
           <Route path='/register' element={<Register/>} />
           <Route path='/profile' element={<Profile user={user} setUser={setUser}/>} />
-          <Route path='/artist' element={<Artist id={id} setId={setId} />} />
+          <Route path='/artist' element={<Artist/>} />
+          
           
       </Routes>
       
