@@ -1,4 +1,4 @@
-
+import {  Link } from "react-router-dom";
 
 import hebe from "../assets/hebe1.jpeg"
 import ploy from "../assets/ploypisut1.jpeg"
@@ -18,9 +18,23 @@ function Home () {
 
         <div className="home">
            
-<div className="artworkContainer"><img className="artwork" src={hebe} alt='hebe' /></div>
-<div className="artworkContainer"><img className="artwork" src={olivia} alt='olivia' /></div>
-<div className="artworkContainer"><img className="artwork" src={ploy} alt='ploypisut' /></div>
+            <div className="artworkContainer">
+                <Link to="/Artist">
+                    <img className="artwork" src={hebe} alt='hebe' />
+                </Link>
+            </div>
+
+            <div className="artworkContainer">
+                <Link to="/Artist"> 
+                    <img className="artwork" src={olivia} alt='olivia' />
+                </Link>
+            </div>
+
+            <div className="artworkContainer">
+                <Link to="/Artist"> 
+                    <img className="artwork" src={ploy} alt='ploypisut' />
+                </Link>
+            </div>
 
         </div>
 

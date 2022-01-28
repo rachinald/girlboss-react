@@ -34,17 +34,17 @@ function App() {
         <nav>
           <ul>
             <li>
-              <Link to="" class="middle">Home</Link>
+              <Link to="" className="middle">Home</Link>
             </li>
             <li>
-              <Link to="/register" class="middle">Register</Link>
+              <Link to="/register" className="middle">Register</Link>
             </li>
             <img src={Logo} className="logo" alt="logo" />
             <li>
-              <Link to="/login" class="middle">Login</Link>
+              <Link to="/login" className="middle">Login</Link>
             </li>
             <li>
-              <Link to="/profile" class="middle">Profile</Link>
+              <Link to="/profile" className="middle">Profile</Link>
             </li>
           </ul>
           

@@ -133,17 +133,16 @@ input {
 }
 
 .artworkContainer {
-  width: 100%;
+  width: 450px;
   height: 600px;
   display: flex;
   justify-content: center;
+  margin: 0 3rem;
   align-items: center;
   overflow: hidden;
 }
 
 .artwork {
-  flex-shrink: 0;
-  -webkit-flex-shrink: 0;
-  max-width: 70%;
-  max-height: 90%;
+  max-width: 500px;
+  object-fit: cover;
 }
