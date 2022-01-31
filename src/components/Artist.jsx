@@ -1,52 +1,51 @@
-import { useState, useEffect } from "react";
-
+import { useEffect, useState } from "react";
 
 function Artist () {
 
-    const [artist, setArtist] = useState()
+  const [artist, setArtist] = useState([]);
 
-    useEffect(()=> {
-  
-        const fetchData = async () => {
-            
-            console.log("hello")
-            try {
-              const res = await fetch(
-          
-                  `http://localhost/artist/${artist.id}`,
-          
-                {
-                  mode: "cors",
-                  cache: "no-cache",
-                  method: "GET",
-                  headers: { "Content-Type": "application/json" },
-                }
-              );
-            //     console.log("fetch done")
-            //   const data = await res.json();
-              
-            //   setArtist(data);
-            //   console.log(artist)
+  const handleFetch = async () => {
 
-      
-            } catch (error) {
-              console.error(error);
-            }
-          };
-          fetchData()
+    const res = await fetch(
+      "http://localhost/artist/getallartists",
+
+      {
+        mode: "cors",
+        method: "GET",
+        headers: { "Content-Type": "application/json" },
+      }
+    );
+
+    const data = await res.json();
+
+    setArtist(data);
+
+    console.log("line 32", artist);
+  };
+
+  useEffect(() => {
+
+    handleFetch()
+
+  },[]);
 
 
-    },[])
+  console.log("!!!", artist)
+
 
     return (
 
     <div className="artist">
 
-        {/* <h1>Name: {artist.artistName}</h1>
-        <h1>Website: {artist.website}</h1>
-        <h1>Instagram: {artist.instagram}</h1>
-        <h1>Category: {artist.category}</h1> */}
-
+<div className="artistInfo">
+      <h1> {artist.name}</h1>
+      <br></br>
+      <h1 ><a target="_blank" href={artist.website} className="middle" rel="noreferrer">Website</a></h1>
+      <br></br>
+      <h1 ><a target="_blank" href={artist.instagram} className="middle" rel="noreferrer">Instagram</a></h1>
+      <br></br>
+      <h2>Category: {artist.category}</h2>
+</div>
     </div>
     )
 }
