@@ -43,19 +43,19 @@ function Home () {
             
             <div className="artworkContainer">
                 <Link to='/artist'>
-                    <img className="artwork" src={artist.allArtists[0].pic} alt='hebe' />
+                    <img className="artwork" src={artist.allArtists[0].pic} alt='0' />
                 </Link>
             </div>
 
             <div className="artworkContainer">
                 <Link to="/artist"> 
-                    <img className="artwork" src={artist.allArtists[1].pic} alt='olivia' />
+                    <img className="artwork" src={artist.allArtists[1].pic} alt='1' />
                 </Link>
             </div>
 
             <div className="artworkContainer">
                 <Link to="/artist"> 
-                    <img className="artwork" src={artist.allArtists[2].pic} alt='ploy' />
+                    <img className="artwork" src={artist.allArtists[2].pic} alt='2' />
                 </Link>
             </div> 
 

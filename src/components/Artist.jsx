@@ -20,7 +20,6 @@ function Artist () {
 
     setArtist(data);
 
-    console.log("line 32", artist);
   };
 
   useEffect(() => {
@@ -29,8 +28,6 @@ function Artist () {
 
   },[]);
 
-
-  console.log("!!!", artist)
 
 
     return (
