@@ -25,6 +25,7 @@ function Home () {
       const data = await res.json();
   
       setArtist(data);
+      console.log("!!!", artist)
   
     };
   
